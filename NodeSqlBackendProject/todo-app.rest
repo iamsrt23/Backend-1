@@ -1,0 +1,68 @@
+### GET /
+
+GET http://localhost:6004
+
+
+
+### Register a user POST/AUTH/REGISTER
+
+POST http://localhost:6004/auth/register
+Content-Type: application/json
+
+{
+    "username" : "rteja170@gmail.com",
+    "password" : "1231231231234"
+}
+
+
+
+
+### Login a user POST/AUTH/LOGIN
+
+
+POST http://localhost:6004/auth/login
+Content-Type: application/json
+
+{
+    "username" : "rteja170@gmail.com",
+    "password" : "1231231231234"
+}
+
+
+
+
+### Fetch all todos GET /TODOS(protected)
+
+GET http://localhost:6004/todos 
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzM0NzA2NjIyLCJleHAiOjE3MzQ3OTMwMjJ9.UgtBW3nBVxa-L2QwZqf7g90apMtsVUnjEk96bXVeNV4
+
+
+
+### POST
+POST http://localhost:6004/todos 
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzM0NzA2NjIyLCJleHAiOjE3MzQ3OTMwMjJ9.UgtBW3nBVxa-L2QwZqf7g90apMtsVUnjEk96bXVeNV4
+
+Content-Type: application/json
+
+{
+    "task" : "Finish the Coding Projects"
+}
+
+
+### update a todo PUT/TODOS/:ID (protected Route)
+
+
+PUT http://localhost:6004/todos/2
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzM0NzA2NjIyLCJleHAiOjE3MzQ3OTMwMjJ9.UgtBW3nBVxa-L2QwZqf7g90apMtsVUnjEk96bXVeNV4
+
+Content-Type: application/json
+
+{
+    "completed" : 1
+    
+}
+
+###Delete a todo DELETE /TODOS/:ID
+DELETE http://localhost:6004/todos/2 
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzM0NzA2NjIyLCJleHAiOjE3MzQ3OTMwMjJ9.UgtBW3nBVxa-L2QwZqf7g90apMtsVUnjEk96bXVeNV4
+

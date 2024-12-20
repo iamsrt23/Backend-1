@@ -1,5 +1,7 @@
 
+### DATA ENDPOINT
 
+GET http://localhost:8088/api/data
 
 ### DATA ENDPOINT  FOR ADDING A USER
 
