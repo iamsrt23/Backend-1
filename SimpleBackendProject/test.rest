@@ -1,0 +1,17 @@
+
+
+
+### DATA ENDPOINT  FOR ADDING A USER
+
+POST http://localhost:8088/api/data
+Content-Type: application/json
+
+{
+    "name": "Ravi"
+
+}
+
+
+### DELETE ENDPOINT
+
+DELETE http://localhost:8088/api/data
